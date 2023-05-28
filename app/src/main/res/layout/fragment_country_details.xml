@@ -1,14 +1,87 @@
-<?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.fragments.CountryDetailsFragment">
+    android:fitsSystemWindows="true">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ImageView
+        android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:scaleType="centerCrop"
+        android:src="@drawable/a" />
 
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/rounded_top_corners"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Venus"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/descriptionTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Venus"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="10dp">
+
+            <Button
+                android:id="@+id/placesButton"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="8dp"
+                android:text="Places"
+                android:background="@drawable/rounded_button"
+                android:padding="5dp"
+                android:textColor="@android:color/black"
+                android:textSize="10sp"
+                android:drawableTop="@drawable/ic_places" />
+
+            <Button
+                android:id="@+id/hotelsButton"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="8dp"
+                android:text="Hotels"
+                android:background="@drawable/rounded_button"
+                android:padding="5dp"
+                android:textColor="@android:color/black"
+                android:textSize="10sp"
+                android:drawableTop="@drawable/ic_hotel" />
+
+            <Button
+                android:id="@+id/restaurantsButton"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="8dp"
+                android:text="Restaurants"
+                android:background="@drawable/rounded_button"
+                android:padding="5dp"
+                android:textColor="@android:color/black"
+                android:textSize="10sp"
+                android:drawableTop="@drawable/ic_restaurant" />
+
+        </LinearLayout>
+    </FrameLayout>
 </FrameLayout>
