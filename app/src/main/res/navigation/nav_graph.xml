@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/lockScreenFragment">
+
+    <fragment
+        android:id="@+id/countryListFragment"
+        android:name="com.titanum.wanderwise.ui.fragments.CountryListFragment"
+        android:label="fragment_country_list"
+        tools:layout="@layout/fragment_country_list" >
+        <action
+            android:id="@+id/action_countryListFragment_to_countryDetailsFragment"
+            app:destination="@id/countryDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/lockScreenFragment"
+        android:name="com.titanum.wanderwise.ui.fragments.LockScreenFragment"
+        android:label="fragment_lock_screen"
+        tools:layout="@layout/fragment_lock_screen" >
+        <action
+            android:id="@+id/action_lockScreenFragment_to_countryListFragment"
+            app:destination="@id/countryListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/countryDetailsFragment"
+        android:name="com.titanum.wanderwise.ui.fragments.CountryDetailsFragment"
+        android:label="fragment_country_details"
+        tools:layout="@layout/fragment_country_details" >
+        <action
+            android:id="@+id/action_countryDetailsFragment_to_hotelListFragment"
+            app:destination="@id/hotelListFragment" />
+        <action
+            android:id="@+id/action_countryDetailsFragment_to_placesListFragment"
+            app:destination="@id/placesListFragment" />
+        <action
+            android:id="@+id/action_countryDetailsFragment_to_restaurantListFragment"
+            app:destination="@id/restaurantListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/hotelListFragment"
+        android:name="com.titanum.wanderwise.ui.fragments.HotelListFragment"
+        android:label="fragment_hotel_list"
+        tools:layout="@layout/fragment_hotel_list" >
+        <action
+            android:id="@+id/action_hotelListFragment_to_hotelDetailsFragment"
+            app:destination="@id/hotelDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/hotelDetailsFragment"
+        android:name="com.titanum.wanderwise.ui.fragments.HotelDetailsFragment"
+        android:label="fragment_hotel_details"
+        tools:layout="@layout/fragment_hotel_details" />
+    <fragment
+        android:id="@+id/placesListFragment"
+        android:name="com.titanum.wanderwise.ui.fragments.PlacesListFragment"
+        android:label="fragment_places_list"
+        tools:layout="@layout/fragment_places_list" >
+        <action
+            android:id="@+id/action_placesListFragment_to_placeDetailsFragment"
+            app:destination="@id/placeDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/placeDetailsFragment"
+        android:name="com.titanum.wanderwise.ui.fragments.PlaceDetailsFragment"
+        android:label="fragment_place_details"
+        tools:layout="@layout/fragment_place_details" />
+    <fragment
+        android:id="@+id/restaurantListFragment"
+        android:name="com.titanum.wanderwise.ui.fragments.RestaurantListFragment"
+        android:label="fragment_restaurant_list"
+        tools:layout="@layout/fragment_restaurant_list" >
+        <action
+            android:id="@+id/action_restaurantListFragment_to_restaurantDetailsFragment"
+            app:destination="@id/restaurantDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/restaurantDetailsFragment"
+        android:name="com.titanum.wanderwise.ui.fragments.RestaurantDetailsFragment"
+        android:label="fragment_restaurant_details"
+        tools:layout="@layout/fragment_restaurant_details" />
+</navigation>
