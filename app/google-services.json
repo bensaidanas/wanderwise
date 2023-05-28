@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "63946307314",
+    "project_id": "travel-app-5c4b9",
+    "storage_bucket": "travel-app-5c4b9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:63946307314:android:4fdf86f7cab4a903de026b",
+        "android_client_info": {
+          "package_name": "com.example.navigation"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCso83xEJsXbuJbjLVNIwEfQI7S1tfCZhw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:63946307314:android:e8c8171a3e60b4b4de026b",
+        "android_client_info": {
+          "package_name": "com.titanum.wanderwise"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCso83xEJsXbuJbjLVNIwEfQI7S1tfCZhw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
