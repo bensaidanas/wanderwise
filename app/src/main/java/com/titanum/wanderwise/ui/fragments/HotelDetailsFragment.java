@@ -53,8 +53,7 @@ public class HotelDetailsFragment extends Fragment {
                 });
             }
         }
-        // Show the action bar
-        ((AppCompatActivity) requireActivity()).getSupportActionBar().show();
+
 
         return rootView;
     }

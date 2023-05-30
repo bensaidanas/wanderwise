@@ -76,8 +76,7 @@ public class CountryDetailsFragment extends Fragment {
             Navigation.findNavController(rootView).navigate(R.id.action_countryDetailsFragment_to_restaurantListFragment, bundle);
         });
 
-        // Show the action bar
-        ((AppCompatActivity) requireActivity()).getSupportActionBar().show();
+
 
         return rootView;
     }

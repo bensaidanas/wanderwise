@@ -52,8 +52,7 @@ public class RestaurantDetailsFragment extends Fragment {
                 });
             }
         }
-        // Show the action bar
-        ((AppCompatActivity) requireActivity()).getSupportActionBar().show();
+
 
         return rootView;
     }

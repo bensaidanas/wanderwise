@@ -51,8 +51,7 @@ public class PlaceDetailsFragment extends Fragment {
                 });
             }
         }
-        // Show the action bar
-        ((AppCompatActivity) requireActivity()).getSupportActionBar().show();
+
 
         return rootView;
     }
