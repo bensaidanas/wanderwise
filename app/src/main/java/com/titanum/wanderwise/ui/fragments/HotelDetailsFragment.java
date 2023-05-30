@@ -49,6 +49,9 @@ public class HotelDetailsFragment extends Fragment {
                                 .load(place.getImageUrl())
                                 .into(binding.imageView);
                         binding.descriptionTextView.setText(place.getDescription());
+                        binding.cityTextView.setText(place.getCity());
+                        binding.priceTextView.setText(String.valueOf(place.getPricePerNight()));
+//                        binding.addressTextView.setText(place.getAddress());
                     }
                 });
             }

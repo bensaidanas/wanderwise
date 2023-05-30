@@ -47,6 +47,7 @@ public class PlaceDetailsFragment extends Fragment {
                                 .load(place.getImageUrl())
                                 .into(binding.imageView);
                         binding.descriptionTextView.setText(place.getDescription());
+                        binding.cityTextView.setText(place.getCity());
                     }
                 });
             }
